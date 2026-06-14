@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_PREFIX: ghcr.io/hashiniPrabuddhika
+  IMAGE_PREFIX: ghcr.io/hashiniprabuddhika
 
 jobs:
   build-auth-service:
@@ -42,7 +42,7 @@ jobs:
           context: ./auth-service
           file: ./auth-service/Dockerfile
           push: true
-          tags: ghcr.io/hashiniPrabuddhika/auth-service:latest
+          tags: ghcr.io/hashiniprabuddhika/auth-service:latest
 
   build-billing-service:
     runs-on: ubuntu-latest
@@ -76,7 +76,7 @@ jobs:
           context: ./billing-service
           file: ./billing-service/Dockerfile
           push: true
-          tags: ghcr.io/hashiniPrabuddhika/billing-service:latest
+          tags: ghcr.io/hashiniprabuddhika/billing-service:latest
 
   build-patient-service:
     runs-on: ubuntu-latest
@@ -110,7 +110,7 @@ jobs:
           context: ./patient-service
           file: ./patient-service/Dockerfile
           push: true
-          tags: ghcr.io/hashiniPrabuddhika/patient-service:latest
+          tags: ghcr.io/hashiniprabuddhika/patient-service:latest
 
   build-analytics-service:
     runs-on: ubuntu-latest
@@ -144,7 +144,7 @@ jobs:
           context: ./analytics-service
           file: ./analytics-service/Dockerfile
           push: true
-          tags: ghcr.io/hashiniPrabuddhika/analytics-service:latest
+          tags: ghcr.io/hashiniprabuddhika/analytics-service:latest
 
   build-api-gateway:
     runs-on: ubuntu-latest
@@ -178,4 +178,4 @@ jobs:
           context: ./api-gateway
           file: ./api-gateway/Dockerfile
           push: true
-          tags: ghcr.io/hashiniPrabuddhika/api-gateway:latest
+          tags: ghcr.io/hashiniprabuddhika/api-gateway:latest
